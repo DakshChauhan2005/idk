@@ -1,0 +1,726 @@
+body{
+    height: 100%;
+    width: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    
+}
+.nav-container1{
+    background-color: rgba(228, 212, 200);
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.navbar{
+    transition: 1s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+}
+.navbar .logo-name{
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #201a1e;
+    font-weight:900 ;
+}
+.login-btn{
+    opacity: .5;
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.4rem;
+    width: 100px;
+    border-radius: 10px;
+    background-color:#D0B49F ;
+    border: 1.5px solid #D0B49F;
+}
+.login-btn:hover{
+    transition: .2s;
+    opacity: 1;
+    border: 1.5px solid black;
+}
+.login-btn a{
+    padding: 9 15px;
+    text-decoration: none;
+    color: #201a1e;
+    font-size: 1.5rem;
+    color: black;
+}
+
+/* Slider */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.slider-container{
+    /* background-color: rgba(208, 180, 159 , .5); */
+    display: flex;
+    height: 400px;
+    width: 80%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    transition: .5s;
+}
+.card{
+    margin: 20px;
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    height: 90%;
+    width: 99%;
+    margin: 2%;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+}
+.card img{
+    margin: 1%;
+    height: 90%;
+    display: block;
+}
+.card .info{
+    text-align: center;
+    margin: 2.5%;
+    width: 100%;
+}
+.info h3{
+    font-size: 2rem;
+}
+.info p {
+    font-size: 1.5rem;
+}
+.info a{
+    all: unset;
+    display: inline-block;
+    /* border: 4px solid rgb(32, 192, 255); */
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px lightcyan;
+    box-shadow: 0px 0px 2px 2px black;
+    background-color: rgba(208, 180, 159, .5);
+    cursor: pointer;
+    height: 30px;
+    width: 120px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.scr-btn{
+    all: unset;
+    display: inline-block;
+    border: 2px solid black;
+    margin: 5px;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+}
+.scr-btn:hover{
+    box-shadow: 1px 1px 20px black;
+}
+
+/*        banner         */
+.banner-container{
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    background-image: url(./Source/Banner/background.jpg);
+}
+.banner-1{
+    height: 100%;
+    width: 80%;
+    display: flex;
+}
+.banner-1 .banner-info{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.banner-info h3{
+    text-align: center;
+    font-size: 4rem;
+}
+.banner-info #banner-btn{
+    all: unset;
+    background-color:white;
+    height: 30px;
+    width: 180px;
+    text-align: center;
+    /* border-radius: 5px; */
+    cursor: pointer;
+    transition: .2s;
+}
+.banner-info #banner-btn:hover{
+    color: orange;
+    font-size: 1.1rem;
+    transition: .2s;
+
+}
+.banner-1 .img{
+    height: 100%;
+    width: 50%;
+}
+.banner-1 .img img{
+    height: 90%;
+    width: 100%;
+    margin: auto 0;
+
+}
+
+.spec-space-container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100px;
+    height: auto;
+    width: 100%;
+}
+.head-space-container{
+    height: 600px;
+    position: relative;
+}
+.sp-back{
+    background: url(./Source/float-Space/background-banner.jpg);
+    opacity: .75;
+    height: 60%;
+    width: 100%;
+}
+.sp-back-cover{
+    height: 25%;
+}
+.sp-float{
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    /* color: white; */
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px gray;
+}
+.sp-info{
+    text-align: center;
+    margin: 0 120px;
+}
+.space-heading{
+    margin: 0 60px;
+    font-size: 3.5rem;
+}
+
+
+
+
+
+.space-book-container{
+    height: auto;
+    width: 60%;
+    border: 2px solid black;
+    align-self: center;
+    background: linear-gradient( rgba(208, 180, 159,.4) ,#fff  ,#fff,   rgba(208, 180, 159,.75));
+    border-radius: 10px;
+}
+.space-book-inner-container{
+    height: 450px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+.space-book-info{
+    height: 100%;
+    width: 60%;
+    font-size: 3rem;
+    margin: 0 150px 0 50px;
+    text-align:start;
+}
+.space-book-info a{
+    all: unset;
+    font-size: 3.5rem;
+    display: inline-block;    
+    color: #D0B49F;
+}
+.space-book-info a h6{
+    display: inline-block;    
+}
+.space-book-info .author{
+    font-size: 1.5rem;
+    color: #000;
+}
+.space-book-info p{
+    /* margin-right: 150px; */
+    font-size: 1.2rem;
+}
+.space-book-image{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+.space-book-image img{
+    height: 90%;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 10px;
+    /* aspect-ratio: 16; */
+}
+
+.space-btn{
+    all: unset;
+    background-color:rgba(208, 180, 159,.5);
+    font-size: 1rem;
+    height: 30px;
+    width: 180px;
+    text-align: center;
+    /* border-radius: 5px; */
+    cursor: pointer;
+    transition: .2s;
+}
+.space-btn:hover{
+    color: orange;
+    font-size: 1.1rem;
+    transition: .2s;
+}
+.not-media{
+    display: none;
+}
+
+/*      space book container - End       */
+
+.browse-container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#fff ,#fff, #D0B49F);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:480px){
+    .nav-container1{
+        height: 3rem;
+    transition: .2s;
+
+    }
+    .navbar{
+        transition: 1s;
+        /* height: 100%; */
+        width: 100%;
+    }
+    .navbar .logo-name{
+        font-size: 1.5rem;
+        margin: 15px;
+    }
+    .login-btn{
+        right: 10px;
+        height: 1.75rem;
+        width: 75px;
+    }
+    .login-btn a{
+        font-size: 1rem;
+    }
+/*         header compleated        */
+/* Slider */
+    main h2{
+        font-size: 1.25rem;
+    }
+    .slider-container{
+        transition: .2s;
+        height: auto;
+        width: 95%;
+    }
+    .card{
+        height: 200px;
+        border-radius: 10px;
+    }
+    .card img{
+        height: 97%;
+        border-radius: 10px;
+    }
+    .card .info{
+        text-align: center;
+        margin: 2.5%;
+        width: 100%;
+    }
+    .info h3{
+        transition: .2s;
+        font-size: .75rem;
+    }
+    .info p {
+        transition: .5s;
+        font-size: .6rem;
+    }
+    .info a{
+        height: 16.5px;
+        width: 70px;
+        font-size: .75rem;
+    }
+    .scr-btn:hover{
+        box-shadow: 1px 1px -10px black;
+    }
+    .break{
+        display: none;
+    }
+    /*        banner         */
+    .banner-container{
+        transition: .5s;
+        height: 150px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        background-image: url(./Source/Banner/background.jpg);
+    }
+    .banner-1{
+        height: 100%;
+        width: 100%;
+        display: flex;
+    }
+    .banner-1 .banner-info{
+        height: 100%;
+        width: 65%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .banner-info h3{
+        text-align: center;
+        font-size: 1.25rem;
+    }
+    .banner-info p{
+        font-size: .75rem;
+    }
+
+    .banner-info #banner-btn{
+        all: unset;
+        background-color:white;
+        height: 30px;
+        width: 180px;
+        text-align: center;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: .2s;
+    }
+    .banner-info #banner-btn:hover{
+        color: orange;
+        font-size: 1.1rem;
+        transition: .2s;
+
+    }
+    .banner-1 .img{
+        height: 100%;
+        width: 35%;
+        display: flex;
+        justify-content: end;
+    }
+    .banner-1 .img img{
+        height: 80%;
+        width: 100%;
+
+    }
+    /*  space collection   */
+    .head-space-container{
+        height: 400px;
+    }
+    .sp-float{
+        width: 80%;
+        height: 70%;
+        top: 55%;
+    }
+    .sp-info{
+        margin: 0 10px;
+    }
+    .space-heading{
+        font-size: 1.25rem;
+    }
+    .space-book-container{
+        height: auto;
+        width: 100%;
+    }
+    .space-book-inner-container{
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
+    .space-book-info{
+        height: 100%;
+        width: 85%;
+        font-size: 1rem;
+        margin:0;
+        text-align:start;
+    }
+    .space-book-info a{
+        font-size: 2rem;
+        display: inline-block;    
+        color: #D0B49F;
+    }
+    .space-book-info a h6{
+        display: inline-block;    
+    }
+    .space-book-info .author{
+        font-size: 1.3rem;
+        color: #000;
+    }
+    .space-book-info p{
+        /* margin-right: 150px; */
+        font-size: 1rem;
+    }
+    .space-book-image{
+        height: 75%;
+        width:75%;
+        display: flex;
+        align-items: center;
+    }
+    .space-book-image img{
+        height: 85%;
+        width: 70%;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+    .media{
+        display: none;
+    }
+    .not-media{
+        display: flex;
+    }
+
+}
+
+@media (min-width: 1281px) and (max-width: 1550px){
+    .space-heading{
+        font-size: 3rem;
+    }
+    .space-book-image img{
+        width: 90%;
+    }
+    .space-book-info{
+        margin: 20px;
+    }
+
+
+
+
+}
+
+@media (min-width: 881px) and (max-width: 1280px){
+    .navbar{
+        transition: 1s;
+        width: 90%;
+    }
+    /* Slider */
+    .slider-container{
+        width: 90%;
+        transition: .5s;
+    }
+    .card{
+        height: 80%;
+        width: 99%;
+    }
+    .card img{
+        margin: 1.5%;
+    }
+    .info h3{
+        font-size: 1.8rem;
+    }
+    .info p {
+        font-size: 1.25rem;
+    }
+    .info a{
+        border-radius: 2px;
+        height: 26px;
+        font-size: 1.25rem;
+    }
+    /*        banner         */
+    .banner-container{
+        height: 325px;
+        width: 100%;
+    }
+    .banner-1{
+        height: 100%;
+        width: 90%;
+    }
+    .banner-info h3{
+        font-size: 3.5rem;
+    }
+    .spec-space-container{
+        display: flex;
+        flex-direction: column;
+        min-height: 100px;
+        height: auto;
+        width: 100%;
+    }
+    .head-space-container{
+        height: 600px;
+        position: relative;
+    }
+    .sp-float{
+        width: 80%;
+        height: 60%;
+    }
+    .sp-info{
+        text-align: center;
+        margin: 0 70px;
+    }
+
+    .space-book-container{
+        height: auto;
+        width: 80%;
+    }
+    .space-book-inner-container{
+        height: 400px;
+    }
+    .space-book-info{
+        height: 100%;
+        width: 55%;
+        font-size: 1.5rem;
+        margin: 0 20px;
+    }
+    .space-book-info a{
+        font-size: 3rem;
+    }
+    .space-book-info .author{
+        font-size: 1.25rem;
+    }
+    .space-book-info p{
+        font-size: .9rem;
+    }
+    .space-book-image{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        align-items: center;
+    }
+    .space-book-image img{
+        height: 90%;
+        width: 65%;
+    }
+    /*      space book container - End       */
+    .browse-container{
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(#fff ,#fff, #D0B49F);
+    }
+    
+    
+}
+
+
+@media (min-width: 431px) and (max-width: 880px){
+    .slider-container{
+      width: 90%;  
+    }
+    .navbar{
+        width: 90%;
+    }
+    /* Slider */
+    .card img{
+        margin: 2%;
+    }
+    .card .info p{
+        font-size: 1rem;
+    }
+    /*        banner         */
+    .banner-container{
+        height: 285px;
+        width: 100%;
+    }
+    .banner-1{
+        height: 100%;
+        width: 95%;
+    }
+    .banner-info h3{
+        /* margin: 10px?; */
+        font-size: 2.5rem;
+    }
+    .head-space-container{
+        height: 450px;
+    }
+    .sp-float{
+        width: 90%;
+        height: 60%;
+    }
+    .sp-info{
+        text-align: center;
+        margin: 0 45px;
+    }
+    .space-heading{
+        margin: 0 20px;
+        font-size: 2rem;
+    }
+    
+
+    .space-book-container{
+        height: auto;
+        width: 90%;
+    }
+    .space-book-inner-container{
+        height: 350px;
+    }
+    .space-book-info{
+        height: 100%;
+        width: 55%;
+        font-size: 1.5rem;
+        margin: 0 20px;
+    }
+    .space-book-info a{
+        font-size: 2.5rem;
+    }
+    .space-book-info .author{
+        font-size: 1.25rem;
+    }
+    .space-book-info p{
+        font-size: .75rem;
+    }
+    .space-book-image{
+        height: 100%;
+        width: 40%;
+    }
+    .space-book-image img{
+        width: 80%;
+    }
+    /*      space book container - End       */
+    .browse-container{
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(#fff ,#fff, #D0B49F);
+    }
+    
+    
+}
